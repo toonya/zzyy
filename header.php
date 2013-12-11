@@ -22,15 +22,15 @@
     		</div>
     		<!--
 <div class="pull-right nav-wrapper">
-    						<?php 
-    							//wp_nav_menu(array('menu' => 'zzyy', 'menu_class' => 'nav nav-pills','container'=>'false')) 
+    						<?php
+    							//wp_nav_menu(array('menu' => 'zzyy', 'menu_class' => 'nav nav-pills','container'=>'false'))
     						?>
     		</div>
 -->
     	</div>
   	</header>
     <div id="banner">
-	    <div id="carousel-example-generic" class="carousel slide container" data-interval="3000" data-ride="carousel">
+	    <div id="carousel-example-generic" class="carousel slide" data-interval="3000" data-ride="carousel">
 	      <!-- Indicators -->
 <!--
 	      <ol class="carousel-indicators">
@@ -39,20 +39,20 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 	      </ol>
 -->
-	    
+
 	      <!-- Wrapper for slides -->
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <div style="background:url(<?php echo get_template_directory_uri(); ?>/images/gardening_1.jpg)"></div>
+	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_1.jpg" />
 	        </div>
 	        <div class="item">
-	          <div style="background:url(<?php echo get_template_directory_uri(); ?>/images/gardening_2.jpg)"></div>
+	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_2.jpg" />
 	        </div>
 	        <div class="item">
-	          <div style="background:url(<?php echo get_template_directory_uri(); ?>/images/gardening_3.jpg)"></div>
+	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_3.jpg" />
 	        </div>
 	      </div>
-	    
+
 	      <!-- Controls -->
 	      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 	        <span class="glyphicon glyphicon-chevron-left"></span>

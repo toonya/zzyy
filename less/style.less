@@ -1,0 +1,98 @@
+//
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+.logo img{
+	height: 48px;
+	margin: 24px auto;
+}
+
+#banner .item>div{
+	height: 240px;
+	background-size: 100% 100%;
+	background-position: center top;
+}
+
+.primary{
+	padding: 40px 0;
+	background: #eee;
+	
+	aside{
+		padding-top: 5px;
+	}
+}
+
+.bonsai{
+	.item{
+		padding: 5px;
+	}
+	
+	.nav{
+		margin-left: 5px;
+	}
+}
+body.modal-open{
+	margin: 0;
+}
+
+.modal-dialog{
+	width: 100%;
+}
+#banner .item img{
+	width: 100%;
+}
+
+//footer
+footer{
+	background: #fff;
+	border-top: 0px solid black;
+}
+
+
+/*
+ * model
+ */
+
+.model, .modal-dialog, .modal-content{
+	height: 100%;
+}
+.modal-dialog{
+	padding: 0;
+}
+.modal-content{
+	.modal-header{
+
+	}
+	.modal-body{
+		overflow:scroll;
+		height: 90%;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) { 
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+	.modal-dialog{
+		width: 75%;
+	}
+
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) { 
+	.modal-dialog{
+		width: 60%;		
+	}
+}
+
+
+
+
+
+

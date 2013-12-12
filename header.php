@@ -30,27 +30,35 @@
     	</div>
   	</header>
     <div id="banner">
-	    <div id="carousel-example-generic" class="carousel slide" data-interval="3000" data-ride="carousel">
-	      <!-- Indicators -->
-<!--
-	      <ol class="carousel-indicators">
-	        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	      </ol>
--->
+        <?php
+            $banner_list = get_option('bannerlist');
+            $banner_control = '';
+            $nav_animation = true;
+			if($banner_list):;
+        ?>
 
+	    <div id="carousel-example-generic" class="carousel slide" data-interval="3000" data-ride="carousel">
 	      <!-- Wrapper for slides -->
+
 	      <div class="carousel-inner">
-	        <div class="item active">
-	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_1.jpg" />
-	        </div>
-	        <div class="item">
-	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_2.jpg" />
-	        </div>
-	        <div class="item">
-	          <img src="<?php echo get_template_directory_uri(); ?>/images/gardening_3.jpg" />
-	        </div>
+	      	<?php
+            	foreach($banner_list as $key=>$item) {
+                	if($key==0) {
+						?>
+						<div class="item active">
+					      <img src="<?php echo $item['imgurl']?>" />
+					    </div>
+						<?
+                	}
+                	else {
+						?>
+						<div class="item">
+					      <img src="<?php echo $item['imgurl']?>" />
+					    </div>
+						<?
+                	}
+            	}
+        	?>
 	      </div>
 
 	      <!-- Controls -->
@@ -61,4 +69,5 @@
 	        <span class="glyphicon glyphicon-chevron-right"></span>
 	      </a>
 	    </div>
+	    <?php endif;?>
     </div>

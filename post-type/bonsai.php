@@ -195,6 +195,12 @@ function myplugin_save_postdata( $post_id ) {
 	  // Update the meta field in the database.
 	  update_post_meta( $post_id, 'showcase', $mydata );
   }
+  else {
+	  $mydata = '';
+
+	  // Update the meta field in the database.
+	  update_post_meta( $post_id, 'showcase', $mydata );
+  }
 }
 add_action( 'save_post', 'myplugin_save_postdata' );
 

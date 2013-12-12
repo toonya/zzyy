@@ -13,9 +13,21 @@
 .primary{
 	padding: 40px 0;
 	background: #eee;
+	position: relative;
 
 	aside{
 		padding-top: 5px;
+	}
+
+	#bonsai-tab{
+		margin:-40px auto 40px;
+
+		&.affix{
+			top:0;
+			z-index: 999;
+			margin: 0;
+			.box-shadow(0 0 10px #aaa);
+		}
 	}
 }
 

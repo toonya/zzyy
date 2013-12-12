@@ -34,10 +34,10 @@
 }
 
 *{
-	.box-sizing(content-box);
+   .box-sizing(content-box);
 }
 
-#banner-option *{
+#banner-option *, .media-modal *{
 	.box-sizing(border-box);
 }
 
@@ -68,6 +68,7 @@
 
 .showcase{
 	padding: 15px;
+
 	.item{
 		box-shadow: 0 0 5px #aaa;
 		margin: 10px 20px 10px 0;
@@ -85,17 +86,20 @@
 			border: none;
 			background: none;
 			cursor: pointer;
-			color: #ddd;
+			color: #ccc;
 			position: absolute;
 			top: 0px;
 			font-size: 16px;
-			line-height: 20px;
-			padding: 0;
+			line-height: 18px;
+			vertical-align: top;
+
+			padding: 0 3px 4px;
+			.opacity(1);
 			right: 0px;
 			width: 20px;
 			height: 20px;
 			background: #000;
-			box-shadow: 0 0 5px #fff;
+			border: 1px solid #fff;
 
 			&:hover{
 				color: #fff;

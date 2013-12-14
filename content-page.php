@@ -82,6 +82,7 @@
 
 
 		  	?>
+		  	<div class="clearfix"></div>
 		  </div>
 	  </div>
 	</section>
@@ -138,9 +139,10 @@
 
 
 		  	?>
+			  	<div class="clearfix"></div>
 		  </div>
 	  </div>
 	</section>
 	</div>
-	<div class="clearfix"></div>
+
 </div>

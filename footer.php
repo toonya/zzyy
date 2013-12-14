@@ -1,16 +1,7 @@
 
 		<footer>
 			<div class="container">
-				<h3 class="text-primary">联系我们</h3>
-				<dl>
-				  <dt>电话</dt>
-				  <dd>0759-*******</dd>
-				  <dt>地址</dt>
-				  <dd>...</dd>
-				</dl>
-				
-				<p class="text-muted initialism">版权所有 ...  <a href="">同雅设计</a></p>
-				
+				<?php echo esc_attr(get_option('footer_contact'));?>
 			</div>
 		</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

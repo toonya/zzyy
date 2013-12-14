@@ -62,7 +62,7 @@
 		  			  	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item">
 
 		  				    <div class="thumbnail">
-		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView/1/w/300/q/85" data-full-src="<?php echo esc_attr($coverpage) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" alt="..."></a>
+		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView/1/w/300/q/85" data-full-src="<?php echo esc_attr($coverpage) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" title="点击查看大图"></a>
 		  				      <div class="caption">
 		  				        <h4 class=""><?php the_title()?></h4>
 		  				        <div class="desc text-muted"><?php /* echo get_post_meta(get_the_ID(), 'excerpt', true ) */ //the_content(); ?></div>
@@ -119,7 +119,7 @@
 		  			  	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item">
 
 		  				    <div class="thumbnail">
-		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView/1/w/300/q/85" data-full-src="<?php echo esc_attr($coverpage) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" alt="..."></a>
+		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView/1/w/300/q/85" data-full-src="<?php echo esc_attr($coverpage) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" title="点击查看大图"></a>
 		  				      <div class="caption">
 		  				        <h4 class=""><?php the_title()?></h4>
 		  				        <div class="desc text-muted"></div>

@@ -122,8 +122,7 @@
 		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($large_image_url[0]); ?>" data-full-src="<?php echo esc_attr($full_image_url[0]) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" alt="..."></a>
 		  				      <div class="caption">
 		  				        <h4 class=""><?php the_title()?></h4>
-		  				        <div class="desc text-muted"><?php /* echo get_post_meta(get_the_ID(), 'excerpt', true ) */ //the_content(); ?></div>
-		  	<!-- 			        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p> -->
+		  				        <div class="desc text-muted"></div>
 		  				      </div>
 		  				    </div>
 

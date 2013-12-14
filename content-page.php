@@ -82,7 +82,6 @@
 
 
 		  	?>
-		  	<div class="clearfix"></div>
 		  </div>
 	  </div>
 	</section>
@@ -114,13 +113,13 @@
 		  			  while ( $greentree->have_posts() ) :
 		  			  	$greentree->the_post();
 		  			  	$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-		  			  	$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+		  			  	$medium_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium');
 						$meta_showcase = get_post_meta( $post->ID, 'showcase', true );
 		  			  	?>
 		  			  	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item">
 
 		  				    <div class="thumbnail">
-		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($large_image_url[0]); ?>" data-full-src="<?php echo esc_attr($full_image_url[0]) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" alt="..."></a>
+		  				      <a data-toggle="modal" href="#fullImage" class=""><img class="img-responsive" src="<?php echo esc_attr($medium_image_url[0]); ?>" data-full-src="<?php echo esc_attr($full_image_url[0]) ?>" data-showcase="<?php if($meta_showcase) echo join(' ',$meta_showcase); ?>" alt="..."></a>
 		  				      <div class="caption">
 		  				        <h4 class=""><?php the_title()?></h4>
 		  				        <div class="desc text-muted"></div>
@@ -139,10 +138,9 @@
 
 
 		  	?>
-			  	<div class="clearfix"></div>
 		  </div>
 	  </div>
 	</section>
 	</div>
-
+	<div class="clearfix"></div>
 </div>

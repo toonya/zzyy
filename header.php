@@ -14,7 +14,7 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body style="overflow:scroll">
   	<header>
     	<div class="container">
     		<div class="logo">

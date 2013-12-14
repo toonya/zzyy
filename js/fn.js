@@ -54,7 +54,7 @@ var $container = $('.bonsai .item-wrapper');
 	 */
 
 	$('.modal').on('hide.bs.modal', function () {
-		$(this).find('.modal-dialog').scrollTop(0);
+		$(this).scrollTop(0);
 	})
 
 	// ----------------------------------------

@@ -2,12 +2,12 @@ jQuery(function($){
 	$('.current-menu-item').addClass('active');
 
 
-	var $container = $('.bonsai .item-wrapper');
-
-	// initialize
+	/*
+var $container = $('.bonsai .item-wrapper');
 	$container.css('padding',0).masonry({
 	  itemSelector: '.item'
 	});
+*/
 
 	$('.bonsai').on('click','.item img',function(e){
 		var full_image    = $(this).attr('data-full-src');

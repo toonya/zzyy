@@ -115,8 +115,6 @@ html, body, .primary.single{
 		max-height: 100%;
 	}
 	ol.carousel-indicators {
-		top:@nav-nav-top;
-		bottom: auto;
 		z-index: @nav-decoration-z;
 	}
 }
@@ -157,27 +155,33 @@ footer{
 	padding: 0;
 }
 
-
+.advice {
+	padding-top: 150px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm) {
-
-
+	.primary.single{
+		ol.carousel-indicators {
+			left: 75%;
+			top:@nav-nav-top;
+			bottom: auto;
+			z-index: @nav-decoration-z;
+		}
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md) {
-	.modal-dialog{
-		width: 75%;
+	.primary.single{
+		ol.carousel-indicators {
+			left: 50%;
+		}
 	}
-
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg) {
-	.modal-dialog{
-		width: 60%;
-	}
+
 }
 
 

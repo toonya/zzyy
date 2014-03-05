@@ -6,7 +6,7 @@
 	if($meta_showcase){
 		$img_counter += sizeof($img_counter);
 		foreach($meta_showcase as $imgSrc) {
-			$imgSrc = preg_replace('-150x150', '', $imgSrc);
+			$imgSrc = preg_replace('/-150x150', '', $imgSrc);
 		}
 	}
 ?>

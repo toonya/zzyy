@@ -45,5 +45,5 @@
 		  </a>
 		</div>
 	</div>
-	<div class="advice text-center visible-xs" >如果您正在使用移动设备，请选装方向后获得更好得浏览体验。</div>
+	<div class="advice text-primary text-center visible-xs" >如果您正在使用移动设备，请旋转移动设备至横屏状态。<br />以便获得更好的视觉体验。</div>
 </div>

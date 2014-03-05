@@ -1,6 +1,15 @@
 //
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
+
+@nav-decoration-z : 100;
+@nav-current-color: #FCFEC2;
+@nav-home-color: #B56900;
+@nav-bg-color: #E0AC49;
+@nav-current-text: #000;
+@nav-home-text:#fff;
+
+
 .logo img{
 	height: 48px;
 	margin: 24px auto;
@@ -27,11 +36,61 @@
 		}
 	}
 }
+
+header.single{
+	background: @nav-bg-color;
+	height: 48px;
+	line-height: 48px;
+
+	a{
+		color: @nav-current-text;
+		width: 10%;
+		display: block;
+		float: left;
+		text-align: center;
+		position: relative;
+		background: @nav-current-color;
+
+		&:hover{
+			text-decoration: none;
+		}
+
+		&::after {
+			content: ' ';
+			position: absolute;
+			transform: rotate(-45deg);
+			transform-origin: 100% 0;
+			width: 34px;
+			height: 34px;
+			right: 0px;
+			top:0px;
+			background: @nav-current-color;
+			z-index: @nav-decoration-z;
+		}
+	}
+
+	.nav a:nth-child(1) {
+		background: @nav-home-color;
+		color: @nav-home-text;
+		&::after {
+			background: @nav-home-color;
+		}
+	}
+
+	.nav a:nth-child(2) {
+		padding-left: 28px;
+	}
+
+}
 .single{
 	padding: 0;
 
 	.item>img {
 		.center-block();
+	}
+	ol.carousel-indicators {
+		top:-32px;
+		bottom: auto;
 	}
 }
 

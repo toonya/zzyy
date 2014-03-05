@@ -14,60 +14,11 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
-  	<header style="background:#fff">
-    	<div class="container">
-    		<div class="logo">
-    			<a href="<?php bloginfo('url');?>"><img  class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" /></a>
-    		</div>
-    		<!--
-<div class="pull-right nav-wrapper">
-    						<?php
-    							//wp_nav_menu(array('menu' => 'zzyy', 'menu_class' => 'nav nav-pills','container'=>'false'))
-    						?>
-    		</div>
--->
-    	</div>
+  <body class="home">
+  	<header>
+	  	<ul id="bonsai-tab" class="nav nav-tabs">
+		  <li class="active"><a href="#bonsai" data-toggle="tab">盆景</a></li>
+		  <li><a href="#greentree" data-toggle="tab">景观树</a></li>
+		</ul>
+	  	<h1>中正园艺</h1>
   	</header>
-    <div id="banner">
-        <?php
-            $banner_list = get_option('bannerlist');
-            $banner_control = '';
-            $nav_animation = true;
-			if($banner_list):;
-        ?>
-
-	    <div id="carousel-example-generic" class="carousel slide" data-interval="3000" data-ride="carousel">
-	      <!-- Wrapper for slides -->
-
-	      <div class="carousel-inner">
-	      	<?php
-            	foreach($banner_list as $key=>$item) {
-                	if($key==0) {
-						?>
-						<div class="item active">
-					      <img src="<?php echo $item['imgurl']?>" />
-					    </div>
-						<?
-                	}
-                	else {
-						?>
-						<div class="item">
-					      <img src="<?php echo $item['imgurl']?>" />
-					    </div>
-						<?
-                	}
-            	}
-        	?>
-	      </div>
-
-	      <!-- Controls -->
-	      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-	        <span class="glyphicon glyphicon-chevron-left"></span>
-	      </a>
-	      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-	        <span class="glyphicon glyphicon-chevron-right"></span>
-	      </a>
-	    </div>
-	    <?php endif;?>
-    </div>

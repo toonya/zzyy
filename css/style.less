@@ -16,33 +16,15 @@
 @nav-decoration-width: @nav-height*.71;
 @nav-nav-top: @nav-height/2-10+1;
 
+// ----------------------------------------
+// ! home value
+// ----------------------------------------
 
-.logo img{
-	height: 48px;
-	margin: 24px auto;
-}
+@home-nav-bg: @nav-home-color;
+@home-nav-text: #fff;
+@home-tab-normal: #fff;
+@home-tab-active: #000;
 
-.primary{
-	padding: 40px 0;
-	background: #eee;
-	position: relative;
-
-	aside{
-		padding-top: 5px;
-	}
-
-	#bonsai-tab{
-		margin:-40px auto 40px;
-		background: #EEEEEE;
-
-		&.affix{
-			top:0;
-			z-index: 999;
-			margin: 0;
-			.box-shadow(0 0 10px #aaa);
-		}
-	}
-}
 
 header.single{
 	background: @nav-bg-color;
@@ -72,7 +54,7 @@ header.single{
 		text-align: center;
 		position: relative;
 		background: @nav-current-color;
-		transition: 1s ease;
+		transition: 1s ease background;
 
 		&:hover{
 			text-decoration: none;
@@ -89,7 +71,7 @@ header.single{
 			top:0px;
 			background: @nav-current-color;
 			z-index: @nav-decoration-z;
-			transition: 1s ease;
+			transition: 1s ease background;
 		}
 	}
 
@@ -116,6 +98,7 @@ html, body, .primary.single{
 	height: 100%;
 	width: 100%;
 	background: #000;
+	font-family: "Microsoft YaHei", Arial, helvetica, sans-serif;
 }
 .primary.single{
 	padding: 0;
@@ -153,21 +136,61 @@ footer{
 	border-top: 0px solid black;
 }
 
-
-/*
- * model
- */
-.modal-dialog{
-	width: 100%;
-}
-
-.modal-dialog{
-	padding: 0;
-}
-
 .advice {
 	padding-top: 100px;
 }
+
+
+// ----------------------------------------
+// ! home
+// ----------------------------------------
+.home {
+
+	header {
+		background: @home-nav-bg;
+
+		h1{
+			margin: 0;
+			padding: .5rem 2rem;
+			font-size: 2rem;
+			color: @home-nav-text;
+		}
+
+		#bonsai-tab{
+			float: right;
+			display: inline-block;
+			border: none;
+
+			li {
+
+				a {
+					color: @home-tab-normal;
+					font-size: 1.5rem;
+					line-height: 2rem;
+					padding: .5rem 1rem;
+
+					&:hover {
+						color: @home-tab-active;
+					}
+				}
+			}
+
+			li.active {
+
+				a {
+					color: @home-tab-active;
+				}
+			}
+		}
+	}
+
+	.primary {
+		padding: 2rem;
+	}
+}
+
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm) {
 	.primary.single{

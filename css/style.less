@@ -8,6 +8,7 @@
 @nav-home-color: #B56900;
 @nav-bg-color: #E0AC49;
 @nav-current-text: #000;
+@nav-home-hover: #390C0D;
 @nav-home-text:#fff;
 
 
@@ -56,6 +57,7 @@ header.single{
 		text-align: center;
 		position: relative;
 		background: @nav-current-color;
+		transition: 1s ease;
 
 		&:hover{
 			text-decoration: none;
@@ -72,6 +74,7 @@ header.single{
 			top:0px;
 			background: @nav-current-color;
 			z-index: @nav-decoration-z;
+			transition: 1s ease;
 		}
 	}
 
@@ -80,6 +83,12 @@ header.single{
 		color: @nav-home-text;
 		&::after {
 			background: @nav-home-color;
+		}
+		&:hover {
+			background: @nav-home-hover;
+			&::after {
+				background: @nav-home-hover;
+			}
 		}
 	}
 

@@ -1,6 +1,7 @@
 
 		<footer>
 			<?php echo get_option('footer_contact');?>
+			<span class="glyphicon glyphicon-leaf"></span>
 		</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -10,3 +11,5 @@
     <?php wp_footer(); ?>
   </body>
 </html>
+
+

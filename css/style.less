@@ -146,10 +146,30 @@ footer{
 // ----------------------------------------
 // ! home
 // ----------------------------------------
+@keyframes leaf {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 .home {
 
 	header {
 		background: @nav-home-hover;
+		height: @home-h1-size + @home-padding-y*2;
+		overflow: hidden;
+		position: relative;
+
+		.leaf {
+			position: absolute;
+			font-size: 3rem;
+			color: #fff;
+			right: 6em;
+			top: 1rem;
+			animation: leaf 2s ease infinite;
+		}
 
 		h1{
 			margin: 0;

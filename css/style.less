@@ -3,6 +3,7 @@
 /* No media query since this is the default in Bootstrap */
 
 @nav-decoration-z : 100;
+@nav-z: 10;
 @nav-current-color: #FCFEC2;
 @nav-home-color: #B56900;
 @nav-bg-color: #E0AC49;
@@ -41,6 +42,11 @@ header.single{
 	background: @nav-bg-color;
 	height: 48px;
 	line-height: 48px;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: @nav-z;
 
 	a{
 		color: @nav-current-text;
@@ -82,11 +88,17 @@ header.single{
 	}
 
 }
-.single{
+html, body, .primary.single{
+	height: 100%;
+	width: 100%;
+}
+.primary.single{
 	padding: 0;
+	background: #000;
 
 	.item>img {
 		.center-block();
+		max-height: 100%;
 	}
 	ol.carousel-indicators {
 		top:-32px;

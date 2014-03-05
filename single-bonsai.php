@@ -14,12 +14,12 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header('home'); ?>
+get_header(); ?>
 
 
 
 	<?php while ( have_posts() ) : the_post(); ?>
-		<?php get_template_part( 'content', 'home' ); ?>
+		<?php get_template_part( 'content', 'single' ); ?>
 	<?php endwhile; // end of the loop. ?>
 
 

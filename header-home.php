@@ -14,8 +14,8 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body style="overflow:scroll">
-  	<header>
+  <body>
+  	<header style="background:#fff">
     	<div class="container">
     		<div class="logo">
     			<a href="<?php bloginfo('url');?>"><img  class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" /></a>

@@ -5,8 +5,9 @@
 	$meta_showcase = get_post_meta( $post->ID, 'showcase', true );
 	if($meta_showcase){
 		$img_counter += sizeof($img_counter);
-		foreach($meta_showcase as $imgSrc) {
-			$imgSrc = preg_replace('/-150x150', '', $imgSrc);
+		foreach($meta_showcase as $index => $imgSrc) {
+			$meta_showcase[$index] = preg_replace('/-150x150/', '', $imgSrc);
+			echo $meta_showcase[$index];
 		}
 	}
 ?>

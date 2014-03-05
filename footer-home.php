@@ -1,8 +1,6 @@
 
 		<footer>
-			<div class="container">
-				<?php echo get_option('footer_contact');?>
-			</div>
+			<?php echo get_option('footer_contact');?>
 		</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.min.js"></script>

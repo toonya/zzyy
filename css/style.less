@@ -11,6 +11,11 @@
 @nav-home-hover: #390C0D;
 @nav-home-text:#fff;
 
+@nav-height: 28px;
+@nav-tab-width: @nav-height*5;
+@nav-decoration-width: @nav-height*.71;
+@nav-nav-top: @nav-height/2-10+1;
+
 
 .logo img{
 	height: 48px;
@@ -41,8 +46,8 @@
 
 header.single{
 	background: @nav-bg-color;
-	height: 48px;
-	line-height: 48px;
+	height: @nav-height;
+	line-height: @nav-height;
 	position: absolute;
 	top:0;
 	left: 0;
@@ -51,7 +56,7 @@ header.single{
 
 	a{
 		color: @nav-current-text;
-		width: 10%;
+		width: @nav-tab-width;
 		display: block;
 		float: left;
 		text-align: center;
@@ -68,8 +73,8 @@ header.single{
 			position: absolute;
 			transform: rotate(-45deg);
 			transform-origin: 100% 0;
-			width: 34px;
-			height: 34px;
+			width: @nav-decoration-width;
+			height: @nav-decoration-width;
 			right: 0px;
 			top:0px;
 			background: @nav-current-color;
@@ -93,7 +98,7 @@ header.single{
 	}
 
 	.nav a:nth-child(2) {
-		padding-left: 28px;
+		padding-left: @nav-height/2;
 	}
 
 }
@@ -110,7 +115,7 @@ html, body, .primary.single{
 		max-height: 100%;
 	}
 	ol.carousel-indicators {
-		top:15px;
+		top:@nav-nav-top;
 		bottom: auto;
 		z-index: @nav-decoration-z;
 	}

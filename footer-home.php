@@ -1,7 +1,14 @@
 
 		<footer>
-			<?php echo get_option('footer_contact');?>
-			<span class="glyphicon glyphicon-leaf"></span>
+			<div class="leaf-decorate">
+				<span class="glyphicon glyphicon-leaf"></span>
+				<span class="glyphicon glyphicon-leaf pull-right"></span>
+			</div>
+			<div class="contact text-center"><?php echo get_option('footer_contact');?></div>
+			<div class="leaf-decorate">
+				<span class="glyphicon glyphicon-leaf"></span>
+				<span class="glyphicon glyphicon-leaf pull-right"></span>
+			</div>
 		</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.min.js"></script>

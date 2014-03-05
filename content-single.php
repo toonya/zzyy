@@ -3,8 +3,15 @@
 	$coverpage = $full_image_url[0];
 	$img_counter = 1;
 	$meta_showcase = get_post_meta( $post->ID, 'showcase', true );
-	if($meta_showcase)
+	if($meta_showcase){
 		$img_counter += sizeof($img_counter);
+		foreach($meta_showcase as $imgSrc) {
+			$string = $imgSrc;
+			$pattern = '-150x150';
+			$replacement = '${1}1,$3';
+			$imgSrc = preg_replace($pattern, $replacement, $string);
+		}
+	}
 ?>
 
 <div class="primary single">
@@ -33,10 +40,10 @@
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		  <a class="left carousel-control" href="#carousel" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left"></span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		  <a class="right carousel-control" href="#carousel" data-slide="next">
 		    <span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
 		</div>

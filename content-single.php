@@ -6,10 +6,7 @@
 	if($meta_showcase){
 		$img_counter += sizeof($img_counter);
 		foreach($meta_showcase as $imgSrc) {
-			$string = $imgSrc;
-			$pattern = '-150x150';
-			$replacement = '${1}1,$3';
-			$imgSrc = preg_replace($pattern, $replacement, $string);
+			$imgSrc = preg_replace('-150x150', '', $imgSrc);
 		}
 	}
 ?>

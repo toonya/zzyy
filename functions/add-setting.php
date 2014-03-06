@@ -101,7 +101,7 @@ function oss_access_domain() {
 function footer_contact_info() {
 	echo '<textarea name="footer_contact" value="" class="form-control" rows="3">'.esc_attr(get_option('footer_contact')).'</textarea>';
 }
-function site_contact_info() {
+function site_keywords_info() {
 	echo '<input name="site_keywords" type="text" class="form-control" value="'.esc_attr(get_option('site_keywords')).'" />';
 }
 ?>

@@ -61,6 +61,11 @@ function add_setting_func() {
                        'footer_contact_info',
                        'add-setting',
                        'add_setting');
+    add_settings_field('site-keywords',
+                       'site_contact',
+                       'site_contact_info',
+                       'add-setting',
+                       'add_setting');
 
     // Register our setting so that $_POST handling is done for us and
     // our callback function just has to echo the <input>
@@ -70,6 +75,7 @@ function add_setting_func() {
     register_setting('add-setting','OSS_ACCESS_BUCKET');
     register_setting('add-setting','OSS_ACCESS_DOMAIN');
     register_setting('add-setting','footer_contact');
+    register_setting('add-setting','site_keywords');
 }// eg_settings_api_init()
 
 add_action('admin_init', 'add_setting_func');
@@ -94,5 +100,8 @@ function oss_access_domain() {
 }
 function footer_contact_info() {
 	echo '<textarea name="footer_contact" value="" class="form-control" rows="3">'.esc_attr(get_option('footer_contact')).'</textarea>';
+}
+function site_contact_info() {
+	echo '<input name="site_keywords" type="text" class="form-control" value="'.esc_attr(get_option('site_keywords')).'" />';
 }
 ?>

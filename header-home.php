@@ -3,6 +3,7 @@
   <head>
     <title><?php echo bloginfo('blogname'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="<?php bloginfo('blogname')?> <?php echo get_the_title()?> <?php echo get_option('site_keywords')?>" />
     <!-- Bootstrap -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" media="screen">

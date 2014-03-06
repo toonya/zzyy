@@ -33,7 +33,7 @@
 	  			  	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item">
 
 	  				    <div class="thumbnail">
-	  				      <a href="<?php the_permalink()?>" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView2/0/w/600/q/20" title="点击查看大图"></a>
+	  				      <a href="<?php the_permalink()?>" class=""><img class="img-responsive" src="<?php echo esc_attr($coverpage); ?>?imageView/1/w/300/q/20" title="点击查看大图"></a>
 	  				      <div class="caption">
 	  				        <h4 class=""><?php the_title()?></h4>
 	  				        <div class="desc text-muted"><?php /* echo get_post_meta(get_the_ID(), 'excerpt', true ) */ //the_content(); ?></div>

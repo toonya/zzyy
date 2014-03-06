@@ -31,7 +31,7 @@
 		    <?php
 			    for($i=1;$i<$img_counter;$i++){
 			    	$index = $i-1;
-				    echo '<div class="item"><img src="'.$meta_showcase[$index].'?imageView2/0/w/1400/q/20" alt="o"></div>';
+				    echo '<div class="item"><img src="'.$meta_showcase[$index].'?imageView/0/w/1400/h/800/q/20" alt="o"></div>';
 			    }
 		    ?>
 		  </div>

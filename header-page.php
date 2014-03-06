@@ -14,7 +14,7 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body class="page">
   	<header class="single">
     	<div class="nav">
     		<a href="<?php bloginfo('url');?>">中正园艺</a>

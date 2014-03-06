@@ -14,11 +14,14 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body>
-  	<header class="single">
-    	<div class="nav">
-    		<a href="<?php bloginfo('url');?>">中正园艺</a>
-    		<a class="current-page" href="<?php echo get_permalink()?>"><?php echo get_the_title()?></a>
-    	</div>
-<!--     	<div class="nav-decoration"></div> -->
-  	</header>
+  <body class="404">
+  	<div>
+	  	<span class="glyphicon glyphicon-leaf">抱歉，没有发现您要找的东西。</span>
+	  	<a href="<?php bloginfo('url');?>">返回中正园艺首页</a>
+  	</div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    <?php wp_footer(); ?>
+  </body>
+</html>

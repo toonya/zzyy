@@ -25,4 +25,4 @@ get_header('page'); ?>
 
 
 
-<?php get_footer('home'); ?>
+<?php get_footer('page'); ?>

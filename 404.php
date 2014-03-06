@@ -14,9 +14,10 @@
     <![endif]-->
     <?php wp_head(); ?>
   </head>
-  <body class="404">
-  	<div>
-	  	<span class="glyphicon glyphicon-leaf">抱歉，没有发现您要找的东西。</span>
+  <body class="wrong">
+  	<div class="info">
+	  	<span class="glyphicon glyphicon-leaf"></span>
+	  	抱歉，没有发现您要找的东西。
 	  	<a href="<?php bloginfo('url');?>">返回中正园艺首页</a>
   	</div>
     <script src="http://code.jquery.com/jquery.min.js"></script>

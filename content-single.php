@@ -26,12 +26,12 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
 		    <div class="item active">
-		      <img src="<?php echo $coverpage;?>" alt="cover page">
+		      <img src="<?php echo $coverpage;?>?imageView2/0/w/1400/q/20" alt="cover page">
 		    </div>
 		    <?php
 			    for($i=1;$i<$img_counter;$i++){
 			    	$index = $i-1;
-				    echo '<div class="item"><img src="'.$meta_showcase[$index].'" alt="o"></div>';
+				    echo '<div class="item"><img src="'.$meta_showcase[$index].'?imageView2/0/w/1400/q/20" alt="o"></div>';
 			    }
 		    ?>
 		  </div>

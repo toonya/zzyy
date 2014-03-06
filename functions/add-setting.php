@@ -62,8 +62,8 @@ function add_setting_func() {
                        'add-setting',
                        'add_setting');
     add_settings_field('site-keywords',
-                       'site_contact',
-                       'site_contact_info',
+                       'site_keywords',
+                       'site_keywords_info',
                        'add-setting',
                        'add_setting');
 

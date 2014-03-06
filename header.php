@@ -17,7 +17,7 @@
   <body>
   	<header class="single">
     	<div class="nav">
-    		<a href="<?php bloginfo('url');?>">中正园艺</a>
+    		<a href="<?php bloginfo('url');?>"><?php bloginfo('blogname')?></a>
     		<a class="current-page" href="<?php echo get_permalink()?>"><?php echo get_the_title()?></a>
     	</div>
 <!--     	<div class="nav-decoration"></div> -->

@@ -21,6 +21,6 @@
 		  <li class="active"><a href="#bonsai" data-toggle="tab">盆景</a></li>
 		  <li><a href="#greentree" data-toggle="tab">景观树</a></li>
 		</ul>
-	  	<h1>中正园艺</h1>
+	  	<h1><?php bloginfo('blogname')?></h1>
 	  	<span class="glyphicon glyphicon-leaf leaf"></span>
   	</header>
